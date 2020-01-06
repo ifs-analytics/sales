@@ -3,7 +3,7 @@ import pandas as pd
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 
-Data = pd.read_csv('ratings.csv', sep=';', names=['user', 'item', 'rating', 'timestamp'], header=None)
+Data = pd.read_csv('ddata1.csv', sep=';', names=['user', 'item', 'rating', 'timestamp'], header=None)
 
 Data = Data.iloc[:,0:3]
 
